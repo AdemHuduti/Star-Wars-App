@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+.welcome {
+  height: 550px;
+	width: 100%;
+	background-color: #444;
+	background-image: url("./img/death_star_image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.welcome__title {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  padding: 25px 60px;
+  background-color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.20em;
+  letter-spacing: 0.4px;
+  transform: translateX(-50%);
+}
+
+.welcome-single-episode {
+  /* height: 600px; */
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.welcome__title-single-episode {
+  position: absolute;
+  left: 50%;
+  width: auto;
+  padding: 25px 60px;
+  bottom: 0;
+  background-color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.20em;
+  letter-spacing: 0.4px;
+  transform: translateX(-50%);
+}
+
+#posters-wrapper {
+  padding-top: 66px;
+}
+
+.poster {
+  width: 18rem;
+  margin-right: 5rem;
+	display: inline-block;
+  transform: translate(12%);
+  position: relative;
+}
+
+
+.poster-overlay {
+	position: absolute;
+  background: rgba(0,0,0,0.7);	
+  color: #fff;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+  width: 100%;
+  padding: 24px;
+}
+
+.poster:hover .poster-overlay {
+	opacity: 1;
+}
+
+.btn:focus, .btn:active  {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.myBtn {
+  display: block;
+  float: left;
+  margin-right: 1%;
+  text-transform: uppercase;
+  letter-spacing: 0.10rem;
+  font-weight: 600;
+  padding: 0.6rem;
+}
+
+.myBtn:hover {
+  background-color: #000;
+}
+
+/* /////////////////////////////////// */
+
+/* MEDIA QUERY */
+
+/* /////////////////////////////////// */
+/* @media (max-width: 1200px) {
+  .poster {
+    width: auto;
+    transform: translate(32%);
+  }
+} */
+
+@media (max-width: 1100px) {
+  .poster {
+    width: 13rem;
+    transform: translate(32%);
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome__title-single-episode {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 972px) {
+  .welcome__title-single-episode {
+    padding: 20px 20px;
+    font-size: 1.10rem;
+  }  
+}
+
+@media (max-width: 902px) {
+  .welcome__title-single-episode {
+    padding: 20px 20px;
+    font-size: 1rem;
+  }  
+}
+
+@media (max-width: 833px) {
+  .welcome__title-single-episode {
+    padding: 20px 20px;
+    font-size: 0.9rem;
+  }  
+}
+
+@media (max-width: 767px) {
+  .welcome__title-single-episode {
+    padding: 10px 10px;
+    font-size: 0.8rem;
+  }
+
+  .poster {
+    width: 13rem;
+    transform: translate(74%);
+  }
+}
+
+@media (max-width: 651px) {
+  .welcome__title-single-episode {
+    padding: 10px 10px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 581px) {
+  .welcome__title-single-episode {
+    background: rgba(255, 255, 255, 0.7);	
+    padding: auto;
+    font-size: 0.7rem;
+  }  
+}
+
+@media (max-width: 581px) {
+  .welcome__title {
+    background: rgba(255, 255, 255, 0.7);	
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  .poster {
+    width: 40%;
+    transform: translate(72%);
+  }
+}
